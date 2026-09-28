@@ -1,7 +1,7 @@
 # Wire HVH
 **Premium Counter Strike 2 Client Modification**
 
-This software should be ran in <b><u>Non-Final</u></b> mode, disallowing you to connect to VAC/Public Servers. If you decide to use this software with VAC use it at your own risk. We disallow HVH Tools where this tool is not allowed.
+This software should be ran in <b><u>-insecure</u></b> mode, disallowing you to connect to VAC/Public Servers. If you decide to use this software with VAC use it at your own risk. We disallow HVH Tools where this tool is not allowed.
 
 Features:
 - Music Player
