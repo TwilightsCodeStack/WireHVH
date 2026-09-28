@@ -1,0 +1,49 @@
+name: Windows x64 build
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Build loader and DLL
+        shell: pwsh
+        run: .\build.ps1
+      - name: Build cs2-dumper
+        shell: pwsh
+        run: |
+          $env:RUSTFLAGS = "--remap-path-prefix=$env:USERPROFILE=.cargo --remap-path-prefix=$env:GITHUB_WORKSPACE=."
+          cargo build --release --manifest-path cs2-dumper-main/Cargo.toml
+      - name: Assemble clean runtime package
+        shell: pwsh
+        run: |
+          $package = Join-Path $PWD 'W1RE-Windows-x64'
+          New-Item -ItemType Directory -Path $package -Force | Out-Null
+          New-Item -ItemType Directory -Path (Join-Path $package 'resources\skins') -Force | Out-Null
+          New-Item -ItemType Directory -Path (Join-Path $package 'resources\music') -Force | Out-Null
+          New-Item -ItemType Directory -Path (Join-Path $package 'licenses') -Force | Out-Null
+          Copy-Item W1RE-Loader.exe, W1RE.dll, MinHook.x64.dll -Destination $package
+          Copy-Item cs2-dumper-main\target\release\cs2-dumper.exe -Destination $package
+          Copy-Item README.md, THIRD-PARTY-NOTICES.md -Destination $package
+          Copy-Item imgui-1.92.7\LICENSE.txt -Destination (Join-Path $package 'licenses\Dear-ImGui.txt')
+          Copy-Item 'MinHook_134_bin (1)\include\MinHook.h' -Destination (Join-Path $package 'licenses\MinHook.h')
+          Copy-Item third_party\nlohmann\LICENSE.MIT -Destination (Join-Path $package 'licenses\nlohmann-json-MIT.txt')
+          Copy-Item cs2-dumper-main\LICENSE -Destination (Join-Path $package 'licenses\cs2-dumper-MIT.txt')
+          Copy-Item resources\README.md -Destination (Join-Path $package 'resources')
+          Copy-Item resources\music\README.txt -Destination (Join-Path $package 'resources\music')
+          Set-Content -LiteralPath (Join-Path $package 'resources\skins\presets.json') -Value '{"presets":[],"version":1}' -Encoding utf8
+          Compress-Archive -Path (Join-Path $package '*') -DestinationPath W1RE-Windows-x64.zip -Force
+      - uses: actions/upload-artifact@v4
+        with:
+          name: W1RE-Windows-x64
+          path: W1RE-Windows-x64.zip
+          if-no-files-found: error

@@ -1,0 +1,13 @@
+# Build output
+*.obj
+*.dll
+*.lib
+*.exp
+*.exe
+tests/loader-smoke-*/
+cs2-dumper-main/target/
+cs2-dumper-main/cs2-dumper.log
+.vs/
+.vscode/
+*.user
+*.suo

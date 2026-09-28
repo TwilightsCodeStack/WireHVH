@@ -1,0 +1,14 @@
+{
+  "build": 14183,
+  "clientStamp": 1790366171,
+  "clientSize": 43614208,
+  "frameIndex": 36,
+  "postDataUpdateEnd": 7,
+  "netUpdateEnd": 8,
+  "functions": {
+    "FrameNotify": { "rva": 11984128, "prefix": "48 89 5C 24 18 48 89 6C 24 20 57 48 83 EC 40" },
+    "SetAttribute": { "rva": 18473744, "prefix": "40 53 48 83 EC 20 48 8B D9 48 81 C1 08 02 00 00" },
+    "RegenerateSkins": { "rva": 8563872, "prefix": "48 83 EC 48 E8 B7 77 CA 00 48 85 C0" },
+    "SubclassChanged": { "rva": 11561600, "prefix": "40 53 48 83 EC 20 48 8B D9" }
+  }
+}
