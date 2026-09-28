@@ -22,6 +22,6 @@ Planned (Most of these are broken):
 **Non-Final**
 
 <p align="center">
-  <img src="./showcase1.gif" width="49%">
-  <img src="./showcase2.gif" width="49%">
+  <img src="showcase1.gif" width="49%">
+  <img src="showcase2.gif" width="49%">
 </p>
