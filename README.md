@@ -19,7 +19,8 @@ Planned (Most of these are broken):
 - Persistent Install
 
 ## Showcases
-**Non-Final**
+
+Non-Final
 
 <p align="center">
   <img src="showcase1.gif" width="49%">
