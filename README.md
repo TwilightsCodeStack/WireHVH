@@ -26,9 +26,3 @@ Non-Final
   <img src="showcase1.gif" width="49%">
   <img src="showcase2.gif" width="49%">
 </p>
-
-<p align="center">
-  <video width="85%" controls>
-    <source src="./showcasevid1.mp4" type="video/mp4">
-  </video>
-</p>
