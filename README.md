@@ -1,4 +1,5 @@
-# Wire HVH
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&width=550&lines=Wire+HVH" />
+<br>
 **Premium Counter Strike 2 Client Modification**
 
 This software should be ran in <b><u>-insecure</u></b> mode, disallowing you to connect to VAC/Public Servers. If you decide to use this software with VAC use it at your own risk. We disallow HVH Tools where this tool is not allowed.
