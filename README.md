@@ -28,11 +28,7 @@ Non-Final
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=rgQHUZnRd-0">
-    <img
-      src="https://img.youtube.com/vi/rgQHUZnRd-0/maxresdefault.jpg"
-      width="85%"
-      alt="Wire HVH Showcase Video"
-    >
+  <a href="./showcasevid1.mp4">
+    ▶️ Watch the Wire HVH Showcase
   </a>
 </p>
