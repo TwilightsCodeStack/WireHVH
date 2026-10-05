@@ -28,7 +28,7 @@ Non-Final
 </p>
 
 <p align="center">
-  <a href="./showcasevid1.mp4">
-    ▶️ Watch the Wire HVH Showcase
-  </a>
+  <video width="85%" controls>
+    <source src="./showcasevid1.mp4" type="video/mp4">
+  </video>
 </p>
