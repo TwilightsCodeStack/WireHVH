@@ -6,7 +6,7 @@
 
 ### Premium Counter-Strike 2 Client Modification
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&width=600&lines=Built+for+private+testing;Experimenting+with+CS2+modifications;Still+under+development" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&width=600&lines=Built+for++testing;Pushing+Limits+of+CS2+HVH;Still+under+development" />
 
 <br>
 
