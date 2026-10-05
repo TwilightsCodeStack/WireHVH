@@ -26,3 +26,13 @@ Non-Final
   <img src="showcase1.gif" width="49%">
   <img src="showcase2.gif" width="49%">
 </p>
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=rgQHUZnRd-0">
+    <img
+      src="https://img.youtube.com/vi/rgQHUZnRd-0/maxresdefault.jpg"
+      width="85%"
+      alt="Wire HVH Showcase Video"
+    >
+  </a>
+</p>
